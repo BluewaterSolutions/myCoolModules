@@ -1,0 +1,38 @@
+{
+    "name":"myCoolModules",
+    "version":"0.0.0",
+    "author":"",
+    "location":"BluewaterSolutions/myCoolModules#v0.0.0",
+    "homepage":"https://github.com/BluewaterSolutions/myCoolModules",
+    "documentation":"https://github.com/BluewaterSolutions/myCoolModules",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/BluewaterSolutions/myCoolModules"
+    },
+    "bugs":"https://github.com/BluewaterSolutions/myCoolModules/issues",
+    "slug":"myCoolModules",
+    "shortDescription":"test",
+    "description":"test",
+    "type":"modules",
+    "dependencies":{
+        
+    },
+    "devDependencies":{
+        "coldbox":"^4.3.0+188",
+        "testbox":"^2.4.0+80"
+    },
+    "installPaths":{
+        "testbox":"testbox",
+        "coldbox":"tests/resources/app/coldbox"
+    },
+    "scripts":{
+        "postVersion":"package set location='BluewaterSolutions/myCoolModules#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push && !git push --tags"
+    },
+    "ignore":[
+        "**/.*",
+        "test",
+        "tests"
+    ]
+}
